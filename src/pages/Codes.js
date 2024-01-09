@@ -17,7 +17,7 @@ export default function Codes() {
         },
       });
       const data2 = await response2.json();
-      console.log(data2, "data2");
+      // console.log(data2, "data2");
       setCode(data2.code);
     } catch (error) {
       console.error("Error:", error);
@@ -44,7 +44,7 @@ export default function Codes() {
         body: JSON.stringify({ code: ccode }),
       }).then(async (res) => {
         const data = await res.json();
-        console.log(data);
+        // console.log(data);
         if (res.status === 200) {
           setStatus("success");
           setLoading(false);
