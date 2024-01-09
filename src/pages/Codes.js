@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 export default function Codes() {
-  const [code, setCode] = useState("");
+  const [code, setCode] = useState("...");
   const [ccode, setCcode] = useState("");
   const [responce, setResponce] = useState("");
   const [loading, setLoading] = useState(false);
@@ -32,7 +32,7 @@ export default function Codes() {
   const checkCode = async () => {
     if (ccode.length <= 0) {
       setStatus("fail");
-      setResponce("Please enter the code");
+      setResponce("Enter a valid code");
       return;
     }
     try {
