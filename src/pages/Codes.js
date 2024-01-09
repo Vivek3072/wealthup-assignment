@@ -32,6 +32,7 @@ export default function Codes() {
 
   const checkCode = async () => {
     if (ccode.length <= 0) {
+      setStatus("fail");
       setResponce("Please enter the code");
       return;
     }
