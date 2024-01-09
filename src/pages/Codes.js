@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 export default function Codes() {
@@ -65,6 +66,9 @@ export default function Codes() {
   };
   return (
     <div className="bg-white text-black h-screen w-full">
+      <Link href="/" className="text-primary text-xl p-5 my-3">
+        &larr; Home
+      </Link>
       <div className="py-14 px-2 w-full flex flex-col w-40">
         <div className="flex flex-row items-center justify-center">
           <div className="w-64 min-h-10 p-2 rounded-lg bg-gradient-to-tr bg-red-400 from-[#686868] to-[#18A19A] text-white text-2xl text-center">
