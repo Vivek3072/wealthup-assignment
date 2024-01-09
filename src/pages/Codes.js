@@ -51,12 +51,12 @@ export default function Codes() {
           setLoading(false);
           setResponce(data.message);
         } else if (res.status === 201) {
-          setStatus("fail");
-          setLoading(true);
+          setStatus("");
+          setLoading(false);
           setResponce(data.message);
         } else {
-          setStatus("fail");
-          setLoading(true);
+          setStatus("");
+          setLoading(false);
           setResponce(data.message);
         }
       });
@@ -101,7 +101,7 @@ export default function Codes() {
         <div
           className={
             status === "success"
-              ? "text-primary text-center"
+              ? "text-green-500 text-center"
               : "text-red-400 text-center"
           }
         >
