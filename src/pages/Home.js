@@ -52,16 +52,12 @@ export default function App() {
               </div>
             </div>
           </div>
-          {/* <img
-            src="./phone.png"
-            className="absolute top-0 left-[35%] w-[40%]"
-          ></img> */}
           <Image
             width={40}
             height={40}
             src={"/Phone.svg"}
             alt="aaa"
-            className="absolute top-20 md:top-0 left-[30%] w-[50%] md:w-[40%]"
+            className="absolute top-20 md:top-0 left-[35%] w-[50%] md:w-[40%]"
             quality={100}
           ></Image>
           <div className="w-[69%] flex flex-col mt-[4rem] align-bottom">
