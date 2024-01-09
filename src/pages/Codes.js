@@ -45,7 +45,7 @@ export default function Codes() {
         body: JSON.stringify({ code: ccode }),
       }).then(async (res) => {
         const data = await res.json();
-        console.log(data);
+        // console.log(data);
         if (res.status === 200) {
           setStatus("success");
           setLoading(false);
