@@ -32,7 +32,7 @@ export default function App() {
                 className="w-[30px] h-[30px] aspect-square"
               ></Image>
               <div className="border-b-2 pb-6">
-                <p className="text-[#fff] text-sm md:text-xl mx-2 font-semibold">
+                <p className="text-[#fff] text-sm lg:text-xl mx-2 font-semibold">
                   Expected Retirement Age
                 </p>
               </div>
@@ -46,7 +46,7 @@ export default function App() {
                 className="w-[30px] h-[30px] aspect-square"
               ></Image>
               <div className="border-b-2 pb-6">
-                <p className="text-[#fff] text-sm md:text-xl mx-2 font-semibold">
+                <p className="text-[#fff] text-sm lg:text-xl mx-2 font-semibold">
                   Identify Mistakes
                 </p>
               </div>
@@ -57,7 +57,7 @@ export default function App() {
             height={40}
             src={"/Phone.svg"}
             alt="aaa"
-            className="absolute top-20 md:top-[10vh] left-[35%] w-[50%] md:w-[40%]"
+            className="absolute top-20 md:top-[10vh] left-[32%] md:left-[35%] w-[50%] md:w-[40%]"
             quality={100}
           ></Image>
           <div className="w-[69%] flex flex-col mt-[4rem] align-bottom">
@@ -71,7 +71,7 @@ export default function App() {
                   className="w-[30px] h-[30px] aspect-square"
                 ></Image>
                 <div className="border-b-2 pb-6">
-                  <p className="text-[#fff] text-sm md:text-xl mx-2 font-semibold">
+                  <p className="text-[#fff] text-sm lg:text-xl mx-2 font-semibold">
                     Personalised Road Map
                   </p>
                 </div>
@@ -85,7 +85,7 @@ export default function App() {
                   className="w-[30px] h-[30px] aspect-square"
                 ></Image>
                 <div className="border-b-2 pb-6">
-                  <p className="text-[#fff] text-sm md:text-xl mx-2 font-semibold">
+                  <p className="text-[#fff] text-sm lg:text-xl mx-2 font-semibold">
                     Tips To Improve
                   </p>
                 </div>
@@ -100,8 +100,8 @@ export default function App() {
           alt="aaa"
           className="w-[100vw] top-[70vh] md:top-[70vh] absolute"
         ></Image>
-        <div className="w-[60%] mx-auto z-[10] md:mt-[50vh] relative">
-          <h1 className="text-3xl md:text-[3rem] font-[600] font-mono text-[#fff] text-center py-7">
+        <div className="w-[100%] lg:w-[70%] mx-auto z-[10] md:mt-[25vh] lg:mt-[30vh] xl:mt-[50vh] relative">
+          <h1 className="text-3xl lg:text-[3rem] font-[600] font-mono text-[#fff] text-center py-3 mb-2">
             How it works?
           </h1>
           <Image
@@ -109,18 +109,26 @@ export default function App() {
             height={40}
             alt="Toolbox"
             src={"/Toolbox.svg"}
-            className="w-[500px] md:w-[100%] top-10 md:top-0 absolute mx-auto"
+            className="w-[90%] lg:w-[80%] h-fit mx-auto"
           ></Image>
-          <div className="w-[100%] text-center text-white mt-[30%] flex justify-between mx-auto">
-            <p className="text-sm md:text-xl w-[32%]">Answer few questions</p>
-            <p className="text-sm md:text-xl w-[32%]">
-              Register using phone and OTP
+          <div className="w-full bg-[#0A5783] text-left text-white flex justify-between ">
+            <p className="text-sm md:text-xl w-[100%] text-center md:mb-5">
+              Answer few
+              <br />
+              questions
             </p>
-            <p className="text-sm md:text-xl w-[32%]">
-              Get report and personal roadmap
+            <p className="text-sm md:text-xl w-[100%] text-center md:mb-5">
+              Register using
+              <br />
+              phone and OTP
+            </p>
+            <p className="text-sm md:text-xl w-[100%] text-center md:mb-5">
+              Get report and
+              <br />
+              personal roadmap
             </p>
           </div>
-          <div className="mx-auto z-[10] w-fit my-5 flex">
+          <div className="mx-auto z-[10] w-fit flex shadow">
             <Link
               href={"/codes"}
               className="bg-[#FB7306] mx-auto px-6 py-3 rounded-3xl text-white font-semibold"
