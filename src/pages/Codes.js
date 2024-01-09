@@ -11,7 +11,7 @@ export default function Codes() {
 
   const fetchData = async () => {
     try {
-      const response2 = await fetch("/api/code", {
+      const response2 = await fetch("/api/codes", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
