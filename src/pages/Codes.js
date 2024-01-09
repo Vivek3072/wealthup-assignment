@@ -10,16 +10,14 @@ export default function Codes() {
 
   const fetchData = async () => {
     try {
-      const response2 = await fetch(
-        "https://wealthupbackend.vercel.app/getCode",
-        {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const response2 = await fetch("/api/code", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
       const data2 = await response2.json();
+      console.log(data2, "data2");
       setCode(data2.code);
     } catch (error) {
       console.error("Error:", error);
@@ -38,7 +36,7 @@ export default function Codes() {
     }
     try {
       setLoading(true);
-      fetch("https://wealthupbackend.vercel.app/checkCode", {
+      fetch("/api/codes/use", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -46,7 +44,7 @@ export default function Codes() {
         body: JSON.stringify({ code: ccode }),
       }).then(async (res) => {
         const data = await res.json();
-        // console.log(data);
+        console.log(data);
         if (res.status === 200) {
           setStatus("success");
           setLoading(false);
